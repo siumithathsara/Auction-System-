@@ -47,6 +47,7 @@ public class ClientViewController implements Initializable {
 
                     javafx.application.Platform.runLater(() -> {
                        txtArea.appendText( "me -"+ message + "\n");
+
             });
                 }
 

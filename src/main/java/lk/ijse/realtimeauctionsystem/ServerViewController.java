@@ -61,7 +61,6 @@ public class ServerViewController  {
         }
     }
 
-
     private static void handleClient(Socket socket) {
         try {
             DataInputStream in = new DataInputStream(socket.getInputStream());
@@ -88,8 +87,6 @@ public class ServerViewController  {
             }
         }
     }
-
-
 
 }
 
