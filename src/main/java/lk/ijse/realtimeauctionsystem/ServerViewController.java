@@ -50,6 +50,15 @@ public class ServerViewController  {
         System.out.println("Please enter the item price ->");
         double price = sc.nextDouble();
 
+
+        DataInputStream dis = new DataInputStream(System.in);
+        String message = "";
+        try {
+            message = dis.readUTF();
+            broadcast(message);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
